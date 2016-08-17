@@ -271,7 +271,7 @@
           }
         }
       }
-      self.sizeContainer($image.width(), $image.height());
+      // self.sizeContainer($image.width(), $image.height());
     };
 
     preloader.src          = this.album[imageNumber].link;
