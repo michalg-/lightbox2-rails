@@ -291,7 +291,11 @@
 
     var oldWidth  = this.$outerContainer.outerWidth();
     var oldHeight = this.$outerContainer.outerHeight();
-    var newWidth  = imageWidth + this.containerLeftPadding + this.containerRightPadding;
+    if (self.options.width) {
+      var newWidth  = self.options.width
+    } else {
+      var newWidth  = imageWidth + this.containerLeftPadding + this.containerRightPadding;
+    }
     var newHeight = imageHeight + this.containerTopPadding + this.containerBottomPadding;
 
     function postResize() {
