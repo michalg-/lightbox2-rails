@@ -236,8 +236,8 @@
 
       $preloader = $(preloader);
 
-      $image.width(preloader.width);
-      $image.height(preloader.height);
+      $image.width('100%');
+      $image.height('auto');
 
       if (self.options.fitImagesInViewport) {
         // Fit image inside the viewport.
