@@ -182,7 +182,7 @@ body.lb-disable-scrolling {
   color: #999999;
 }
 
-.lb-data .lb-close {
+.lb-close {
   display: block;
   float: right;
   width: 30px;
@@ -198,7 +198,7 @@ body.lb-disable-scrolling {
   transition: opacity 0.2s;
 }
 
-.lb-data .lb-close:hover {
+.lb-close:hover {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
