@@ -57,6 +57,7 @@ body.lb-disable-scrolling {
 
 .lb-container {
   padding: 4px;
+  position: relative;
 }
 
 .lb-loader {
@@ -185,8 +186,8 @@ body.lb-disable-scrolling {
 .lb-close {
   display: block;
   float: right;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   background: url(image_path('lightbox/close.png')) top right no-repeat;
   text-align: right;
   outline: none;
@@ -202,4 +203,22 @@ body.lb-disable-scrolling {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+
+.lb-outerContainer {
+  min-height: 250px;
+}
+.lb-outerContainer .top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+    background-color: #000;
+}
+.lb-outerContainer .bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 11;
+    background-color: #000;
 }
